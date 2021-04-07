@@ -1,0 +1,77 @@
+@import './variables';
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $background-dark;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+// common classes
+
+.wrapper {
+  height: 100%;
+  font-size: 15px;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  padding: 12px 32px;
+  background-color: $lightblue;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background 0.2s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $lightblue-dimmed;
+  }
+}
+
+.tag {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: $lightblue-gradient;
+
+  font-size: 12px;
+}

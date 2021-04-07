@@ -1,0 +1,14 @@
+.webinars-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+// Mobile S devices
+@media (max-width: 320px) {
+  .webinars-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
